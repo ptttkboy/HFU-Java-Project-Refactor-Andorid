@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".ui.login.LoginFragment">
+
+    <LinearLayout
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_margin="50dp"
+        android:gravity="center">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/reg_title"
+            android:textSize="30sp"
+            android:layout_marginBottom="20dp" />
+
+        <!-- user name -->
+        <EditText
+            android:id="@+id/et_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/reg_name" />
+
+        <TextView
+            android:id="@+id/regInput_name_msg"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="請輸入名稱"
+            android:layout_marginLeft="5dp"
+            android:visibility="gone"/>
+
+        <!-- email -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginTop="10dp" >
+
+            <EditText
+                android:id="@+id/et_email"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/reg_email"
+                android:inputType="textEmailAddress"/>
+
+            <TextView
+                android:id="@+id/regInput_email_msg"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="請輸入正確信箱"
+                android:layout_marginLeft="5dp"
+                android:visibility="gone" />
+
+        </LinearLayout>
+
+        <!-- password -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp" >
+
+            <EditText
+                android:id="@+id/et_password"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/reg_password"
+                android:inputType="textPassword"/>
+
+            <TextView
+                android:id="@+id/regInput_password_msg"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="請輸入6位以上英文或數字"
+                android:layout_marginLeft="5dp"/>
+
+        </LinearLayout>
+
+        <!-- phone -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp" >
+
+            <EditText
+                android:id="@+id/et_phone"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/reg_phone"
+                android:inputType="number"/>
+
+            <TextView
+                android:id="@+id/regInput_phone_msg"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="請輸入正確聯絡電話"
+                android:layout_marginLeft="5dp"
+                android:visibility="gone" />
+
+        </LinearLayout>
+
+        <!-- submit -->
+        <Button
+            android:id="@+id/reg_submit_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/reg_submit_btn"
+            android:padding="10dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="20dp"/>
+
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".ui.settings.SettingsFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/hello_blank_fragment" />
+
+    <Button
+        android:id="@+id/connecting_test_btn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="connection test"/>
+
+    <Button
+        android:id="@+id/setting_test_btn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        />
+
+    <ImageView
+        android:id="@+id/setting_img_test"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        />
+
+    <ImageView
+        android:id="@+id/setting_img_test222"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <Button
+        android:id="@+id/btn_login_test"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text=" login test"/>
+
+    <TextView
+        android:id="@+id/login_test_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        />
+
+    <Button
+        android:id="@+id/setting_img_download_btn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Download Image From URL"
+        />
+
+    <ImageView
+        android:id="@+id/setting_downloadedImg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+</LinearLayout>

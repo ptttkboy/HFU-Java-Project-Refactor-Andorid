@@ -1,0 +1,61 @@
+<resources>
+    <string name="app_name">project_demo1</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="text_test">
+        Hello blank fragmentHello blank fragmentHello blank fragmentHello blank fragmentHello blank fragmentHello blank fragmentHello blank fragment
+        Hello blank fragmentHello blank fragmentHello blank fragmentHello blank fragmentHello blank fragmentHello blank fragmentHello blank fragment
+        Hello blank fragmentHello blank fragmentHello blank fragmentHello blank fragmentHello blank fragmentHello blank fragmentHello blank fragment
+        Hello blank fragmentHello blank fragmentHello blank fragmentHello blank fragmentHello blank fragmentHello blank fragmentHello blank fragment
+        Hello blank fragmentHello blank fragmentHello blank fragmentHello blank fragmentHello blank fragmentHello blank fragmentHello blank fragment
+        Hello blank fragmentHello blank fragmentHello blank fragmentHello blank fragmentHello blank fragmentHello blank fragmentHello blank fragment
+        Hello blank fragmentHello blank fragmentHello blank fragmentHello blank fragmentHello blank fragmentHello blank fragmentHello blank fragment
+        Hello blank fragmentHello blank fragmentHello blank fragmentHello blank fragmentHello blank fragmentHello blank fragmentHello blank fragment
+        Hello blank fragmentHello blank fragmentHello blank fragmentHello blank fragmentHello blank fragmentHello blank fragmentHello blank fragment
+        Hello blank fragmentHello blank fragmentHello blank fragmentHello blank fragmentHello blank fragmentHello blank fragmentHello blank fragment
+        Hello blank fragmentHello blank fragmentHello blank fragmentHello blank fragmentHello blank fragmentHello blank fragmentHello blank fragment
+        Hello blank fragmentHello blank fragmentHello blank fragmentHello blank fragmentHello blank fragmentHello blank fragmentHello blank fragment
+
+                Hello blank fragmentHello blank fragmentHello blank fragmentHello blank fragmentHello blank fragmentHello blank fragmentHello blank fragment
+        Hello blank fragmentHello blank fragmentHello blank fragmentHello blank fragmentHello blank fragmentHello blank fragmentHello blank fragment
+        Hello blank fragmentHello blank fragmentHello blank fragmentHello blank fragmentHello blank fragmentHello blank fragmentHello blank fragment
+        Hello blank fragmentHello blank fragmentHello blank fragmentHello blank fragmentHello blank fragmentHello blank fragmentHello blank fragment
+        Hello blank fragmentHello blank fragmentHello blank fragmentHello blank fragmentHello blank fragmentHello blank fragmentHello blank fragment
+        Hello blank fragmentHello blank fragmentHello blank fragmentHello blank fragmentHello blank fragmentHello blank fragmentHello blank fragment
+        Hello blank fragmentHello blank fragmentHello blank fragmentHello blank fragmentHello blank fragmentHello blank fragmentHello blank fragment
+        Hello blank fragmentHello blank fragmentHello blank fragmentHello blank fragmentHello blank fragmentHello blank fragmentHello blank fragment
+        Hello blank fragmentHello blank fragmentHello blank fragmentHello blank fragmentHello blank fragmentHello blank fragmentHello blank fragment
+        Hello blank fragmentHello blank fragmentHello blank fragmentHello blank fragmentHello blank fragmentHello blank fragmentHello blank fragment
+        Hello blank fragmentHello blank fragmentHello blank fragmentHello blank fragmentHello blank fragmentHello blank fragmentHello blank fragment
+        Hello blank fragmentHello blank fragmentHello blank fragmentHello blank fragmentHello blank fragmentHello blank fragmentHello blank fragment
+Hello blank fragmentHello blank fragmentHello blank fragmentHello blank fragmentHello blank fragmentHello blank fragmentHello blank fragment
+    </string>
+
+    <string name="open_drawer">open_drawer</string>
+    <string name="close_drawer">close_drawer</string>
+    <!-- for testing-->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="test_home">Home</string>
+    <string name="test_login">Login</string>
+    <string name="test_settings">Settings</string>
+    <!--  for testing  -->
+
+    <!-- login page-->
+    <string name="login_title">登入</string>
+    <string name="login_account">帳號</string>
+    <string name="login_password">密碼</string>
+    <string name="login_login_btn">登入</string>
+    <string name="login_register_btn">註冊</string>
+
+    <!-- registration page-->
+    <string name="reg_title">請填入以下資訊</string>
+    <string name="reg_name">暱稱</string>
+    <string name="reg_account">帳號</string>
+    <string name="reg_password">密碼</string>
+    <string name="reg_phone">聯絡電話</string>
+    <string name="reg_email">信箱</string>
+    <string name="reg_submit_btn">提交</string>
+
+    <!-- registration done -->
+    <string name="reg_done_title">註冊成功！</string>
+    <string name="reg_done_btn">回到登入頁面</string>
+</resources>

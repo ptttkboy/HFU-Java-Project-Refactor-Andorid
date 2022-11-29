@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+
+        <!-- item
+                id: link to fragment tag id of nav graph
+                title: item title(which is navigation view in this case)
+        -->
+
+        <item
+            android:id="@+id/nav_homeFragment"
+            android:icon="@drawable/ic_home"
+            android:title="首頁"/>
+
+        <item
+            android:id="@+id/nav_loginFragment"
+            android:icon="@drawable/ic_login"
+            android:title="登入"/>
+
+        <item
+            android:id="@+id/nav_myProfileFragment"
+            android:icon="@drawable/ic_profile"
+            android:title="個人頁面"/>
+        <item
+            android:id="@+id/nav_settingsFragment"
+            android:icon="@drawable/ic_setting"
+            android:title="設定"/>
+
+        <item
+            android:id="@+id/nav_logoutDialogFragment"
+            android:icon="@drawable/ic_logout"
+            android:title="登出"
+            android:visible="false"/>
+
+    </group>
+
+</menu>

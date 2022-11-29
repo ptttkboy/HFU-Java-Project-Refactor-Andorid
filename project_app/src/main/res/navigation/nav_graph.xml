@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_view"
+    app:startDestination="@id/nav_homeFragment">
+
+    <!--
+        id: correspond to <menu> <item>
+        name: full classname of fragment
+        label: the title on toolbar
+        layout: layout of specific fragment
+    -->
+
+    <!-- Home -->
+    <fragment
+        android:id="@+id/nav_homeFragment"
+        android:name="com.example.project_demo1.ui.home.HomeFragment"
+        android:label="首頁"
+        tools:layout="@layout/fragment_home" >
+
+        <action
+            android:id="@+id/action_nav_homeFragment_to_searchResultFragment"
+            app:destination="@id/searchResultFragment"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right"/>
+        <action
+            android:id="@+id/action_nav_homeFragment_to_infoPageFragment"
+            app:destination="@id/infoPageFragment" />
+
+    </fragment>
+
+    <!-- Search Result-->
+    <fragment
+        android:id="@+id/searchResultFragment"
+        android:name="com.example.project_demo1.ui.home.SearchResultFragment"
+        android:label="fragment_search_result"
+        tools:layout="@layout/fragment_search_result" >
+
+        <action
+            android:id="@+id/action_searchResultFragment_self"
+            app:destination="@id/searchResultFragment"
+            app:enterAnim="@anim/slide_in_right"
+            app:popExitAnim="@anim/slide_out_right"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popUpTo="@id/searchResultFragment"
+            app:popUpToInclusive="true" />
+        <action
+            android:id="@+id/action_searchResultFragment_to_infoPageFragment"
+            app:destination="@id/infoPageFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/infoPageFragment"
+        android:name="com.example.project_demo1.ui.home.InfoPageFragment"
+        android:label="fragment_info_page"
+        tools:layout="@layout/fragment_info_page" />
+
+    <!-- my profile -->
+    <fragment
+        android:id="@+id/nav_myProfileFragment"
+        android:name="com.example.project_demo1.ui.myprofile.MyProfileFragment"
+        android:label="fragment_my_profile"
+        tools:layout="@layout/fragment_my_profile" >
+
+        <action
+            android:id="@+id/action_nav_myProfileFragment_to_loginDialogFragment"
+            app:destination="@id/loginDialogFragment" />
+        <action
+            android:id="@+id/action_nav_myProfileFragment_to_logoutDialogFragment"
+            app:destination="@id/nav_logoutDialogFragment" />
+    </fragment>
+
+    <!-- login -->
+    <fragment
+        android:id="@+id/nav_loginFragment"
+        android:name="com.example.project_demo1.ui.login.LoginFragment"
+        android:label="登入會員"
+        tools:layout="@layout/fragment_login">
+        <action
+            android:id="@+id/action_nav_loginFragment_to_registrationInfoFragment"
+            app:destination="@id/registrationInfoFragment"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right" />
+
+    </fragment>
+
+    <!-- registration-->
+    <!-- pop back stacks until login -->
+    <fragment
+        android:id="@+id/registrationInfoFragment"
+        android:name="com.example.project_demo1.ui.login.RegistrationInfoFragment"
+        android:label="註冊會員"
+        tools:layout="@layout/fragment_registration_info">
+
+        <action
+            android:id="@+id/action_registrationInfoFragment_to_registrationDoneFragment"
+            app:destination="@id/registrationDoneFragment"
+            app:popUpTo="@id/nav_loginFragment"
+            app:popUpToInclusive="false"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right" />
+
+    </fragment>
+
+    <fragment
+        android:id="@+id/registrationDoneFragment"
+        android:name="com.example.project_demo1.ui.login.RegistrationDoneFragment"
+        android:label="註冊成功"
+        tools:layout="@layout/fragment_registration_done" >
+
+        <action
+            android:id="@+id/action_registrationDoneFragment_to_nav_loginFragment"
+            app:destination="@id/nav_loginFragment"
+            app:popUpTo="@id/nav_loginFragment"
+            app:popUpToInclusive="true"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right" />
+    </fragment>
+
+    <!-- settings -->
+    <fragment
+        android:id="@+id/nav_settingsFragment"
+        android:name="com.example.project_demo1.ui.settings.SettingsFragment"
+        android:label="fragment_settings"
+        tools:layout="@layout/fragment_settings" />
+
+    <!-- login alert dialog -->
+    <dialog
+        android:id="@+id/loginDialogFragment"
+        android:name="com.example.project_demo1.ui.dialog.LoginDialogFragment"
+        android:label="LoginDialogFragment" >
+        <action
+            android:id="@+id/action_loginDialogFragment_to_nav_loginFragment"
+            app:destination="@id/nav_loginFragment"
+            app:popUpTo="@id/nav_myProfileFragment"
+            app:popUpToInclusive="true" />
+    </dialog>
+
+    <dialog
+        android:id="@+id/nav_logoutDialogFragment"
+        android:name="com.example.project_demo1.ui.dialog.LogoutDialogFragment"
+        android:label="LogoutDialogFragment" >
+        <action
+            android:id="@+id/action_nav_logoutDialogFragment_to_nav_myProfileFragment"
+            app:destination="@id/nav_myProfileFragment" />
+    </dialog>
+
+</navigation>
